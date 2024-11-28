@@ -25,7 +25,7 @@ const timer = (deadLine) => {
                 timerHours.textContent = '00';
                 timerMinutes.textContent = '00';
                 timerSeconds.textContent = '00';
-                clearInterval(timerId);
+                // clearInterval(timerId);
             }
     };
 
