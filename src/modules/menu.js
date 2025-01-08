@@ -14,7 +14,7 @@ const menu = () => {
                 }
             });
     
-            if (e.target.classList.contains('close-btn') /*|| !e.target.classList.contains('active-menu')*/) {
+            if (e.target.classList.contains('close-btn') || !e.target.closest('.active-menu') && !e.target.closest('.menu')) {
                 menu.classList.remove('active-menu');               
             }
         }) 
@@ -24,3 +24,9 @@ const menu = () => {
 }
 
 export default menu;
+
+
+
+// if (e.target.classList.contains('close-btn') || !e.target.closest('.active-menu') && !e.target.closest('.menu')) {
+//     menu.classList.remove('active-menu');
+//     }
